@@ -7,48 +7,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
-    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-4 shadow-md">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-white">
+
+    <!-- Cabeçalho Institucional Padrão -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-6 py-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-4">
             <div class="flex items-center space-x-3">
-                <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-md flex items-center justify-center">
+                <div class="bg-blue-600 text-white p-2.5 rounded-2xl shadow-lg flex items-center justify-center">
                     <i class="fa-solid fa-heart-pulse text-xl"></i>
                 </div>
                 <div>
-                    <span class="text-base font-extrabold tracking-tight text-white block">Saúde em Geral</span>
-                    <span class="text-xs text-blue-400 font-medium">ACS Alex da Silva Oliveira | Jaderlândia & ESF Nova Conquista</span>
+                    <span class="text-lg font-extrabold tracking-tight text-white block">Portal ACS & ACE</span>
+                    <span class="text-xs text-blue-400 font-medium">Alex da Silva Oliveira | U.S. Jaderlândia & ESF Nova Conquista (Paragominas/PA)[cite: 3]</span>
                 </div>
             </div>
-            <nav class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                <a href="index.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Início</a>
-                <a href="ambiental.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde Ambiental</a>
-                <a href="mental.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde Mental</a>
-                <a href="geral.html" class="px-3.5 py-2 rounded-xl bg-blue-600 text-white shadow">Saúde Geral</a>
-                <a href="homem.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde do Homem</a>
-                <a href="mulher.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde da Mulher</a>
+            <nav class="flex flex-wrap items-center gap-1.5 font-medium text-xs">
+                <a href="index.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Início</a>
+                <a href="ambiental.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Ambiente</a>
+                <a href="mental.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Mental</a>
+                <a href="geral.html" class="px-3 py-2 rounded-xl bg-blue-600 text-white shadow">Geral</a>
+                <a href="homem.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Homem</a>
+                <a href="mulher.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Mulher</a>
+                <a href="crianca.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Criança</a>
+                <a href="idoso.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Idoso</a>
+                <a href="adolescente.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Adolescente</a>
+                <a href="humanizacao.html" class="px-3 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Humanização</a>
             </nav>
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12 flex-grow w-full">
-        <div class="bg-gradient-to-r from-blue-950 to-slate-800 border border-blue-500/30 rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <section class="bg-gradient-to-r from-blue-950/80 to-slate-800 border border-blue-500/30 rounded-3xl p-6 sm:p-10 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
             <div class="space-y-4 max-w-2xl">
-                <span class="bg-blue-900 text-blue-300 text-xs font-bold px-3.5 py-1 rounded-full border border-blue-500/40">Cadastramento & Prevenção</span>
-                <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Saúde em Geral na Atenção Básica</h1>
+                <span class="bg-blue-900 text-blue-300 text-xs font-bold px-3 py-1 rounded-full border border-blue-500/40">Atenção Básica & Prevenção</span>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Saúde em Geral: Cadastramento e Acompanhamento</h1>
                 <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-                    Acompanhamento contínuo de famílias, controle de hipertensão, diabetes, vacinação em dia e busca ativa de sintomáticos respiratórios. O SUS presente em cada lar.
+                    O acompanhamento contínuo de hipertensos, diabéticos, gestantes e a atualização da caderneta de vacinação formam a base sólida da Atenção Primária no SUS.
                 </p>
             </div>
-            <div class="w-full lg:w-96 h-56 rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-900">
-                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Saúde Geral" class="w-full h-full object-cover">
+            <div class="w-full lg:w-96 h-56 rounded-2xl overflow-hidden shadow-2xl border border-slate-700 shrink-0 bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Saúde em Geral" class="w-full h-full object-cover">
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="bg-slate-900 border-t border-slate-800 py-6 px-4 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Saúde Geral • Portal do ACS & ACE (Paragominas/PA).</p>
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 px-4 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Portal do ACS & ACE • Unidade de Saúde Jaderlândia & ESF Nova Conquista (Paragominas/PA)[cite: 3].</p>
     </footer>
 </body>
 </html>
