@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal ACS & ACE | Início - Paragominas/PA</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: { 50: '#f0fdf4', 100: '#dcfce7', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d' },
+                        eco: { light: '#e0f2fe', DEFAULT: '#0284c7', dark: '#0369a1' }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-forest-500 selection:text-white">
+
+    <!-- Header / Navbar Principal -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="bg-forest-600 text-white p-2.5 rounded-xl shadow-md flex items-center justify-center">
+                    <i class="fa-solid fa-notes-medical text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-base font-extrabold tracking-tight text-white block">Portal do ACS & ACE</span>
+                    <span class="text-xs text-forest-400 font-medium">Alex da Silva Oliveira | Jaderlândia & ESF Nova Conquista (Paragominas/PA)</span>
+                </div>
+            </div>
+
+            <!-- Navegação Multi-Páginas -->
+            <nav class="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                <a href="index.html" class="px-3.5 py-2 rounded-xl bg-forest-600 text-white shadow">Início</a>
+                <a href="ambiental.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde Ambiental</a>
+                <a href="mental.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde Mental</a>
+                <a href="geral.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde Geral</a>
+                <a href="homem.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde do Homem</a>
+                <a href="mulher.html" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Saúde da Mulher</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal / Dashboard -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12 flex-grow w-full">
+        <!-- Hero Section -->
+        <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 text-slate-800/40 text-9xl font-black pointer-events-none">SUS</div>
+            <div class="relative z-10 max-w-3xl space-y-6">
+                <span class="inline-flex items-center space-x-2 bg-forest-900/80 border border-forest-500/40 text-forest-300 text-xs font-semibold px-4 py-1.5 rounded-full">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <span>Atenção Primária à Saúde no Território</span>
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+                    Transformando a Comunidade Através da <span class="text-forest-500">Prevenção</span> e do Cuidado.
+                </h1>
+                <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                    Bem-vindo ao portal oficial de atuação dos Agentes Comunitários de Saúde e de Combate às Endemias de Paragominas/PA. Explore nossas páginas temáticas dedicadas a promover o bem-estar coletivo, a sustentabilidade e a vigilância em saúde.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="ambiental.html" class="bg-forest-600 hover:bg-forest-700 text-white font-bold px-6 py-3 rounded-2xl transition-all shadow-lg text-xs flex items-center space-x-2">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Explorar Saúde Ambiental (COP30)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards de Acesso Rápido às Páginas Temáticas -->
+        <div class="space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <h2 class="text-xl font-bold text-white flex items-center">
+                    <i class="fa-solid fa-compass text-forest-400 mr-2"></i> Eixos Temáticos de Atuação do ACS & ACE
+                </h2>
+                <p class="text-xs text-slate-400 mt-0.5">Clique em qualquer eixo para acessar a página detalhada com enredos, diretrizes e mural de mídia.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+                <a href="ambiental.html" class="bg-slate-800/80 border border-slate-700 hover:border-forest-500 p-6 rounded-2xl space-y-3 transition-all group">
+                    <div class="w-12 h-12 bg-forest-900 text-forest-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Saúde Ambiental</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Saneamento, qualidade da água, controle de vetores e impactos da COP30.</p>
+                </a>
+
+                <a href="mental.html" class="bg-slate-800/80 border border-slate-700 hover:border-purple-500 p-6 rounded-2xl space-y-3 transition-all group">
+                    <div class="w-12 h-12 bg-purple-900 text-purple-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Saúde Mental</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Escuta ativa domiciliar, apoio emocional e vinculação com a RAPS.</p>
+                </a>
+
+                <a href="geral.html" class="bg-slate-800/80 border border-slate-700 hover:border-blue-500 p-6 rounded-2xl space-y-3 transition-all group">
+                    <div class="w-12 h-12 bg-blue-900 text-blue-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Saúde em Geral</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Cadastramento domiciliar, vacinação, puericultura e crônicos.</p>
+                </a>
+
+                <a href="homem.html" class="bg-slate-800/80 border border-slate-700 hover:border-cyan-500 p-6 rounded-2xl space-y-3 transition-all group">
+                    <div class="w-12 h-12 bg-cyan-900 text-cyan-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Saúde do Homem</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Prevenção ativa, saúde do trabalhador e quebra de barreiras de acesso.</p>
+                </a>
+
+                <a href="mulher.html" class="bg-slate-800/80 border border-slate-700 hover:border-rose-500 p-6 rounded-2xl space-y-3 transition-all group">
+                    <div class="w-12 h-12 bg-rose-900 text-rose-400 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-venus"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Saúde da Mulher</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Pré-natal, exames citopatológicos e planejamento reprodutivo.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-6 px-4 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Portal do ACS & ACE • Alex da Silva Oliveira (Jaderlândia & ESF Nova Conquista - Paragominas/PA).</p>
+    </footer>
+</body>
+</html>
