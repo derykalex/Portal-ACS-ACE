@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal do ACS e ACE | Início</title>
+    <title>Portal do ACS e ACE | Início & Importância</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.03); opacity: 1; filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.4)); }
+        }
+        .animate-glow {
+            animation: pulseGlow 4s infinite ease-in-out;
+        }
+    </style>
 </head>
 <body class="bg-slate-900 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-white">
 
     <!-- Cabeçalho Institucional -->
-    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-6 py-4">
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-6 py-4 shadow-md">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center space-x-3">
-                <div class="bg-emerald-600 text-white p-2.5 rounded-2xl shadow-lg flex items-center justify-center">
+                <div class="bg-emerald-600 text-white p-2.5 rounded-2xl shadow-lg flex items-center justify-center animate-pulse">
                     <i class="fa-solid fa-leaf text-xl"></i>
                 </div>
                 <div>
                     <span class="text-lg font-extrabold tracking-tight text-white block">Portal ACS & ACE</span>
-                    <span class="text-xs text-emerald-400 font-medium">Alex da Silva Oliveira | U.S. Jaderlândia & ESF Nova Conquista (Paragominas/PA)</span>
+                    <span class="text-xs text-emerald-400 font-medium">Alex da Silva Oliveira | U.S. Jaderlândia & ESF Nova Conquista (Paragominas/PA)[cite: 3]</span>
                 </div>
             </div>
             <nav class="flex flex-wrap items-center gap-2 font-medium text-xs sm:text-sm">
@@ -37,121 +46,149 @@
     <!-- Conteúdo Principal / Início -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16 flex-grow w-full">
         
-        <!-- Hero Section com Vídeo de Apresentação -->
+        <!-- Hero Section com Vídeo de Apresentação e Animação -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center space-x-2 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-semibold px-4 py-2 rounded-full">
+                <div class="inline-flex items-center space-x-2 bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-semibold px-4 py-2 rounded-full animate-bounce">
                     <i class="fa-solid fa-user-shield"></i>
-                    <span>Atenção Primária à Saúde & Território Vivo</span>
+                    <span>Atenção Primária à Saúde & Território Vivo[cite: 399]</span>
                 </div>
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-                    Transformando a Comunidade com <span class="text-emerald-500">Prevenção e Cuidado</span>
+                    O Elo Vital do SUS: <span class="text-emerald-500">ACS e ACE</span> em Ação
                 </h1>
                 <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Bem-vindo ao portal oficial de atuação dos Agentes Comunitários de Saúde (ACS) e de Combate às Endemias (ACE). Aqui você acompanha ações de saneamento, vigilância epidemiológica, campanhas educativas e o compromisso com o SUS em Paragominas, Pará.
+                    Atuando diretamente nas residências e espaços comunitários, o Agente Comunitário de Saúde e o Agente de Combate às Endemias transformam a realidade da saúde pública através da prevenção, vínculo e vigilância ativa[cite: 399].
                 </p>
                 <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
-                    <a href="ambiental.html" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3.5 rounded-2xl transition-all shadow-lg text-sm flex items-center space-x-2">
-                        <span>Explorar Saúde Ambiental</span>
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="#importancia" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3.5 rounded-2xl transition-all shadow-lg text-sm flex items-center space-x-2">
+                        <span>Ver Importância da Profissão</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
                     </a>
-                    <a href="#pilares" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3.5 rounded-2xl border border-slate-700 transition-all text-sm">
-                        Conhecer os Eixos
+                    <a href="ambiental.html" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3.5 rounded-2xl border border-slate-700 transition-all text-sm">
+                        Explorar Páginas
                     </a>
                 </div>
             </div>
 
-            <!-- Vídeo de Apresentação em Destaque -->
+            <!-- Vídeo de Apresentação com Animação Glow -->
             <div class="lg:col-span-5">
-                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-3 shadow-2xl overflow-hidden">
+                <div class="bg-slate-800 border border-slate-700 rounded-3xl p-3 shadow-2xl overflow-hidden animate-glow">
                     <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
-                        <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/UwmLRxdEahc" title="Vídeo de Apresentação - ACS e ACE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/qYGpE2s5Kil" title="Lei 11350 - Atividades dos ACS e ACE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="p-4 text-center">
-                        <h3 class="text-sm font-bold text-white">Vídeo Institucional: O Papel do Saneamento e da Saúde Básica</h3>
-                        <p class="text-xs text-slate-400 mt-1">Documentário oficial abordando os impactos na comunidade.</p>
+                        <h3 class="text-sm font-bold text-white">Vídeo em Destaque: A Atuação Legal e Prática do ACS e ACE[cite: 385]</h3>
+                        <p class="text-xs text-slate-400 mt-1">Conheça as diretrizes da Lei 11.350/2006[cite: 385].</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Pilares / Eixos de Atuação -->
-        <section id="pilares" class="space-y-8 pt-6">
+        <!-- Seção Animada: A Importância do ACS e ACE -->
+        <section id="importancia" class="space-y-8 pt-6">
             <div class="text-center max-w-2xl mx-auto space-y-2">
-                <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase bg-emerald-950/60 px-3.5 py-1 rounded-full border border-emerald-500/30">Nossos Domínios de Atuação</span>
-                <h2 class="text-3xl font-extrabold text-white">Conheça Nossas Páginas Temáticas</h2>
-                <p class="text-slate-400 text-sm">Navegue pelos módulos especializados desenvolvidos para o acompanhamento completo da saúde pública.</p>
+                <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase bg-emerald-950/60 px-3.5 py-1 rounded-full border border-emerald-500/30">Missão e Impacto Social</span>
+                <h2 class="text-3xl font-extrabold text-white">Por que o Agente de Saúde é Indispensável?</h2>
+                <p class="text-slate-400 text-sm">Eles carregam o SUS para dentro de cada lar, unindo ciência sanitária, acolhimento e cidadania[cite: 399].</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-slate-800/80 border border-slate-700/80 hover:border-emerald-500 p-6 rounded-3xl transition-all duration-300 space-y-4 shadow-lg hover:scale-105">
+                    <div class="w-12 h-12 bg-emerald-900/80 text-emerald-400 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-house-chimney-medical"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Vínculo Comunitário (ACS)</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        O ACS conhece a realidade de cada família, mapeia riscos socioambientais[cite: 399], incentiva a vacinação e acompanha gestantes e portadores de doenças crônicas diretamente na porta de casa.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-800/80 border border-slate-700/80 hover:border-amber-500 p-6 rounded-3xl transition-all duration-300 space-y-4 shadow-lg hover:scale-105">
+                    <div class="w-12 h-12 bg-amber-900/80 text-amber-400 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-mosquito"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Vigilância e Endemias (ACE)</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        O ACE atua no controle rigoroso de vetores transmissores de arboviroses (dengue, zika, chikungunya)[cite: 31, 399] e zoonoses, bloqueando surtos epidêmicos antes que atinjam a população.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-800/80 border border-slate-700/80 hover:border-blue-500 p-6 rounded-3xl transition-all duration-300 space-y-4 shadow-lg hover:scale-105">
+                    <div class="w-12 h-12 bg-blue-900/80 text-blue-400 rounded-2xl flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-bridge-water"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Intersetorialidade e Saúde</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        Conectam a saúde pública com o saneamento básico, educação ambiental nas escolas (PSE)[cite: 50] e políticas públicas de justiça climática e social.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Acesso Rápido às Páginas Temáticas -->
+        <section class="space-y-8 pt-6">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase bg-emerald-950/60 px-3.5 py-1 rounded-full border border-emerald-500/30">Nossos Domínios</span>
+                <h2 class="text-3xl font-extrabold text-white">Explore as Páginas Temáticas do Portal</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1 -->
                 <a href="ambiental.html" class="bg-slate-800/80 border border-slate-700/80 hover:border-emerald-500 p-6 rounded-3xl transition-all duration-300 group flex flex-col justify-between space-y-4 shadow-lg">
                     <div class="space-y-3">
                         <div class="w-12 h-12 bg-emerald-900/80 text-emerald-400 rounded-2xl flex items-center justify-center text-xl group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                             <i class="fa-solid fa-seedling"></i>
                         </div>
                         <h3 class="text-lg font-bold text-white">Saúde Ambiental</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Controle vetorial (Dengue, Zika), qualidade da água (Vigiágua), saneamento básico, COP30 em Belém e sustentabilidade na Amazônia.
-                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Água, vetores, COP30 e sustentabilidade na Amazônia.</p>
                     </div>
-                    <span class="text-xs font-bold text-emerald-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar página <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
+                    <span class="text-xs font-bold text-emerald-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
                 </a>
 
-                <!-- Card 2 -->
                 <a href="mental.html" class="bg-slate-800/80 border border-slate-700/80 hover:border-purple-500 p-6 rounded-3xl transition-all duration-300 group flex flex-col justify-between space-y-4 shadow-lg">
                     <div class="space-y-3">
                         <div class="w-12 h-12 bg-purple-900/80 text-purple-400 rounded-2xl flex items-center justify-center text-xl group-hover:bg-purple-600 group-hover:text-white transition-colors">
                             <i class="fa-solid fa-brain"></i>
                         </div>
                         <h3 class="text-lg font-bold text-white">Saúde Mental</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Escuta qualificada domiciliar, apoio emocional, articulação com a RAPS e prevenção ao sofrimento psíquico na comunidade.
-                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Escuta qualificada e apoio emocional na comunidade.</p>
                     </div>
-                    <span class="text-xs font-bold text-purple-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar página <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
+                    <span class="text-xs font-bold text-purple-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
                 </a>
 
-                <!-- Card 3 -->
                 <a href="geral.html" class="bg-slate-800/80 border border-slate-700/80 hover:border-blue-500 p-6 rounded-3xl transition-all duration-300 group flex flex-col justify-between space-y-4 shadow-lg">
                     <div class="space-y-3">
                         <div class="w-12 h-12 bg-blue-900/80 text-blue-400 rounded-2xl flex items-center justify-center text-xl group-hover:bg-blue-600 group-hover:text-white transition-colors">
                             <i class="fa-solid fa-heart-pulse"></i>
                         </div>
                         <h3 class="text-lg font-bold text-white">Saúde em Geral</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Cadastramento territorial, vacinação em dia, controle de hipertensão, diabetes e acompanhamento de crônicos na Atenção Básica.
-                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Cadastramento, vacinação e acompanhamento de crônicos.</p>
                     </div>
-                    <span class="text-xs font-bold text-blue-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar página <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
+                    <span class="text-xs font-bold text-blue-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
                 </a>
 
-                <!-- Card 4 -->
                 <a href="homem.html" class="bg-slate-800/80 border border-slate-700/80 hover:border-cyan-500 p-6 rounded-3xl transition-all duration-300 group flex flex-col justify-between space-y-4 shadow-lg">
                     <div class="space-y-3">
                         <div class="w-12 h-12 bg-cyan-900/80 text-cyan-400 rounded-2xl flex items-center justify-center text-xl group-hover:bg-cyan-600 group-hover:text-white transition-colors">
                             <i class="fa-solid fa-user-shield"></i>
                         </div>
                         <h3 class="text-lg font-bold text-white">Saúde do Homem</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Quebrando barreiras de prevenção, exames de rotina, saúde do trabalhador e conscientização sobre ISTs e câncer de próstata.
-                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Prevenção, exames de rotina e saúde do trabalhador.</p>
                     </div>
-                    <span class="text-xs font-bold text-cyan-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar página <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
+                    <span class="text-xs font-bold text-cyan-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
                 </a>
 
-                <!-- Card 5 -->
                 <a href="mulher.html" class="bg-slate-800/80 border border-slate-700/80 hover:border-rose-500 p-6 rounded-3xl transition-all duration-300 group flex flex-col justify-between space-y-4 shadow-lg">
                     <div class="space-y-3">
                         <div class="w-12 h-12 bg-rose-900/80 text-rose-400 rounded-2xl flex items-center justify-center text-xl group-hover:bg-rose-600 group-hover:text-white transition-colors">
                             <i class="fa-solid fa-ribbon"></i>
                         </div>
                         <h3 class="text-lg font-bold text-white">Saúde da Mulher</h3>
-                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                            Pré-natal humanizado, prevenção do colo do útero (Papanicolau), planejamento familiar e apoio materno-infantil.
-                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Pré-natal, Papanicolau e planejamento familiar.</p>
                     </div>
-                    <span class="text-xs font-bold text-rose-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar página <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
+                    <span class="text-xs font-bold text-rose-400 flex items-center group-hover:translate-x-1 transition-transform">Acessar <i class="fa-solid fa-arrow-right ml-1.5"></i></span>
                 </a>
             </div>
         </section>
@@ -160,7 +197,7 @@
 
     <!-- Rodapé -->
     <footer class="bg-slate-900 border-t border-slate-800 py-8 px-4 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Portal do ACS & ACE • Unidade de Saúde Jaderlândia & ESF Nova Conquista (Paragominas/PA).</p>
+        <p>&copy; 2026 Portal do ACS & ACE • Unidade de Saúde Jaderlândia & ESF Nova Conquista (Paragominas/PA)[cite: 3].</p>
     </footer>
 
 </body>
